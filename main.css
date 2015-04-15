@@ -1,0 +1,71 @@
+body{
+	font-family: Helvetica;
+	margin: 0px; /*remove built in margin*/
+}
+
+a{
+	text-decoration: none;
+}
+
+a:active{
+	color: inherit;
+
+}
+/*sub menu*/
+nav ul ul{
+	display: none;/*//hide sub menu by defaul*/
+	padding: 0; /*prevent sub menu item from pushing elements on the right over*/
+	position: absolute;/*prevent sub menu item from pushing elements on the right over*/
+	margin: 0;
+	width: 30%; /*inherit*/
+	/*background-color: none; that didn't take away submenu background color*/
+}
+
+/*show on hover of parent*/
+
+nav ul li:hover ul{
+	display: block;
+	/*background-color: lightblue;*/
+
+}
+
+nav ul{
+	display: inline-block;
+	list-style: none;
+	width: 100%;
+
+}
+
+nav ul li{
+	float: left;
+	margin-right: 12px;
+	/*padding: 10px;*/
+	background-color: lightblue;
+	/*border-radius: 10px;  for rounded corners*/
+	width: 30%;
+	text-align: center;
+}
+
+nav ul li a {
+	padding: 20px; /*bigger click area*/
+	display: block; /*otherwise they smoosh up on eachother*/
+
+}
+
+nav ul li li{
+	/*margin-top: 8px;*/
+	float: none;
+	display: block;
+	/*width: auto;*/
+	width: 90%;
+	margin-left: 38px;
+	/*background-color: none;*/
+
+}
+
+nav ul ul li a {
+	padding: 20px; /*bigger click area*/
+	display: block; /*otherwise they smoosh up on eachother*/
+	/*color: purple;*/
+}
+

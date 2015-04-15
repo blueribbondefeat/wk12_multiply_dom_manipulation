@@ -1,0 +1,76 @@
+
+
+body{
+	font-family: Helvetica;
+	margin: 0px; /*remove built in margin*/
+	background-color: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:active{
+	color: inherit;
+
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	/*display: none;*/
+	list-style: none;
+	/*width: 100%;*/
+
+}
+
+nav ul li{
+	/*float: left;
+	margin-right: 12px;*/
+	/*padding: 10px;*/
+	background-color: none;
+	/*border-radius: 10px;  for rounded corners*/
+	/*width: 30%;*/
+	text-align: center;
+}
+
+nav	ul a{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #000;
+}
+
+nav ul a:hover{
+	background-color: #ccc;
+}
+
+nav ul li a {
+	padding: 20px; /*bigger click area*/
+	display: block; /*otherwise they smoosh up on eachother*/
+
+}
+
+.is_mobile{
+	/*display: block;*/
+	padding: 20px;
+}
+
+@media (min-width: 421px){
+	body{
+		background-color: none;
+	}
+
+	nav ul{
+		display: inline-block;
+
+	}
+
+	nav ul li{
+		float: left;
+	}
+
+	.is_mobile{
+		display: none;
+	}
+}
